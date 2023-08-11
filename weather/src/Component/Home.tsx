@@ -39,7 +39,7 @@ const Home: React.FC = () => {
             const response = await fetch(apiUrl);
             if (response.ok) {
                 const data = await response.json();
-            //   console.log(data);
+            
                 setWeatherData(data);
         } else {
             setWeatherData(null); // City not found
